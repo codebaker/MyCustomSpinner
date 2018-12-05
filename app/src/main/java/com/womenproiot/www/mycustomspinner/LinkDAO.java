@@ -126,7 +126,11 @@ public class LinkDAO extends SQLiteOpenHelper {
         return list;
     }
 
-    public ArrayList<AttendeeDto> selectAttenddee(String seq) {
+
+    /*
+    * 스피너에서 선택한 아이템의 seq로 Attendee 테이블에서 참석자를 검색해서 AttendeeDto 리스트로 만든다.
+    * */
+    public ArrayList<AttendeeDto> selectAttendee(String seq) {
 
         String sql = "SELECT fr_seq,name,address FROM attendee WHERE fr_seq = ?";
 

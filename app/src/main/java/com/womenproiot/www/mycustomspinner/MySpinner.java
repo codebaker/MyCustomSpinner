@@ -40,7 +40,7 @@ public class MySpinner extends ArrayAdapter<MeetupDto> {
 
         if (null == row) {
             holder = new ViewHolder();
-            row = inflater.inflate(R.layout.row, parent, false);
+            row = inflater.inflate(R.layout.item_spinner, parent, false);
             holder.seq = (TextView) row.findViewById(R.id.textViewSeq);
             holder.title = (TextView) row.findViewById(R.id.textViewTitle);
             row.setTag(holder);
